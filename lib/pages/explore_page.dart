@@ -1,9 +1,7 @@
-import 'dart:developer';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:shoe_app/component/gnav_bar.dart';
 import 'package:shoe_app/const/asset_const.dart';
@@ -44,9 +42,7 @@ class _ExplorePageState extends ConsumerState<ExplorePage> with SingleTickerProv
 
   @override
   Widget build(BuildContext context) {
-    final isShowingDetailsPage = useState(false);
     Size size = MediaQuery.of(context).size;
-    ThemeData themeData = Theme.of(context);
     return Scaffold(
       appBar: nikeAppBar(size),
       bottomNavigationBar: const GNavBar(),
@@ -69,7 +65,7 @@ class _ExplorePageState extends ConsumerState<ExplorePage> with SingleTickerProv
           // Card
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 40),
+              padding: const EdgeInsets.symmetric(vertical: 16),
               child: PageView.builder(
                 controller: productPageController,
                 physics: const ScrollPhysics(),
