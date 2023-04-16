@@ -1,16 +1,9 @@
-# shoe_app
+# Flutter Shoe App
 
-A new Flutter project.
+This is a practice project.
 
-## Getting Started
+## UI Project Link : https://www.behance.net/gallery/167658397/Shoe-Store-Mobile-App-UI
 
-This project is a starting point for a Flutter application.
+## Screenshot
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![shoe_app_explore](https://user-images.githubusercontent.com/35481593/232296092-9673290c-57a6-4305-b4bb-09e95c0cf74b.gif)
