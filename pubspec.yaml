@@ -33,3 +33,4 @@ flutter:
     - assets/shoe/
     - assets/image/
     - assets/icon/
+    - shorebird.yaml
