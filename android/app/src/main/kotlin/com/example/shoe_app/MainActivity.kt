@@ -1,4 +1,4 @@
-package com.example.shoe_app
+package app.nike.celestial
 
 import io.flutter.embedding.android.FlutterActivity
 

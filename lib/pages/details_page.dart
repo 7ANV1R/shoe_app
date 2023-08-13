@@ -35,41 +35,6 @@ class _DetailsPageState extends ConsumerState<DetailsPage> with SingleTickerProv
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: nikeAppBarWithBackButton(size),
-      // bottomNavigationBar: Padding(
-      //   padding: const EdgeInsets.all(16.0),
-      //   child: Container(
-      //     height: 70,
-      //     width: size.width,
-      //     decoration: BoxDecoration(
-      //       color: Colors.white,
-      //       borderRadius: BorderRadius.circular(12),
-      //       boxShadow: [
-      //         BoxShadow(
-      //           color: Colors.black.withOpacity(0.5),
-      //           blurRadius: 10,
-      //           offset: const Offset(0, -5),
-      //         ),
-      //       ],
-      //     ),
-      //     child: SlideAction(
-      //       onSubmit: () {},
-      //       sliderButtonIcon: const Icon(
-      //         Icons.shopping_cart,
-      //         color: Colors.white,
-      //       ),
-      //       text: 'Add to cart',
-      //       textStyle: const TextStyle(
-      //         fontSize: 18,
-      //         color: Colors.white,
-      //         fontWeight: FontWeight.w500,
-      //       ),
-      //       borderRadius: 12,
-      //       elevation: 0,
-      //       innerColor: HexColor(item.prodPrimaryColor),
-      //       outerColor: HexColor(item.prodPrimaryColor).withOpacity(0.5),
-      //     ),
-      //   ),
-      // ),
       body: Column(
         children: [
           Expanded(
