@@ -82,7 +82,9 @@ class _ExplorePageState extends ConsumerState<ExplorePage> with SingleTickerProv
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const DetailsPage(),
+                          builder: (context) => DetailsPage(
+                            shoe: item,
+                          ),
                         ),
                       );
                     },
@@ -103,32 +105,36 @@ class _ExplorePageState extends ConsumerState<ExplorePage> with SingleTickerProv
                         Positioned(
                           top: 32,
                           right: 4,
-                          child: Transform.rotate(
-                            angle: -35 * math.pi / 180,
-                            child: Container(
-                              clipBehavior: Clip.none,
-                              child: AnimatedBuilder(
-                                  animation: animationController,
-                                  builder: (context, snapshot) {
-                                    final valueAnimation = Curves.linear.transform(animationController.value);
+                          child: Hero(
+                            tag: item.img,
+                            child: Transform.rotate(
+                              angle: -35 * math.pi / 180,
+                              child: Container(
+                                clipBehavior: Clip.none,
+                                child: AnimatedBuilder(
+                                    animation: animationController,
+                                    builder: (context, snapshot) {
+                                      final valueAnimation =
+                                          Curves.linear.transform(animationController.value);
 
-                                    return Opacity(
-                                      opacity: opacity.toDouble(),
-                                      child: Image.asset(
-                                        item.img,
-                                        height: 297.88 + 20,
-                                        width: 297.88 + 20,
-                                      )
-                                          .animate()
-                                          .scaleXY(
-                                            end: scale,
-                                          )
-                                          .rotate(
-                                            begin: 0 * valueAnimation,
-                                            end: -0.09 * valueAnimation,
-                                          ),
-                                    );
-                                  }),
+                                      return Opacity(
+                                        opacity: opacity.toDouble(),
+                                        child: Image.asset(
+                                          item.img,
+                                          height: 297.88 + 20,
+                                          width: 297.88 + 20,
+                                        )
+                                            .animate()
+                                            .scaleXY(
+                                              end: scale,
+                                            )
+                                            .rotate(
+                                              begin: 0 * valueAnimation,
+                                              end: -0.09 * valueAnimation,
+                                            ),
+                                      );
+                                    }),
+                              ),
                             ),
                           ),
                         ),
